@@ -422,7 +422,7 @@
             </StackPanel>
 
             <Border Grid.Row="4" BorderBrush="#B7CBFF" BorderThickness="0,1,0,0">
-                <TextBlock Text="◆    版权所有：小乔老师    联系方式：14758886948" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#58739D" FontWeight="Bold" />
+                <TextBlock Text="◆    小乔点击工具    本地离线运行" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#58739D" FontWeight="Bold" />
             </Border>
         </Grid>
     </Border>
