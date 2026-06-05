@@ -2,6 +2,10 @@
 
 这是新的长期维护主线，技术栈为 C# / .NET 10 / WPF。旧 Python、PySide6、WebView 版本只作为参考，不再作为最终产品主线。
 
+## 软件界面
+
+![小乔点击工具主界面](../docs/images/main-window.png)
+
 ## 用户安装
 
 如果已经有安装包，直接双击安装：
