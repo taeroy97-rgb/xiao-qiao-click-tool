@@ -8,6 +8,22 @@
 
 ![小乔点击工具主界面](docs/images/main-window.png)
 
+## 普通用户下载
+
+不需要下载源码，直接到 GitHub Releases 下载最新版安装包：
+
+```text
+https://github.com/taeroy97-rgb/xiao-qiao-click-tool/releases/latest
+```
+
+下载文件：
+
+```text
+小乔点击工具 1.1.7.exe
+```
+
+下载后双击安装即可。
+
 ## 适合场景
 
 - 需要在固定位置重复点击
