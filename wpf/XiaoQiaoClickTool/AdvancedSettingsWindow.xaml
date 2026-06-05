@@ -1,0 +1,143 @@
+<Window x:Class="XiaoQiaoClickTool.AdvancedSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="高级设置"
+        Width="760"
+        Height="610"
+        MinWidth="700"
+        MinHeight="560"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanResize"
+        Background="#F8FCFF"
+        FontFamily="Microsoft YaHei UI"
+        FontSize="14">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="PageBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#F9FEFF" Offset="0" />
+            <GradientStop Color="#DDF9FF" Offset="0.42" />
+            <GradientStop Color="#F9E7F6" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="PrimaryBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#37BEFF" Offset="0" />
+            <GradientStop Color="#3257FF" Offset="0.62" />
+            <GradientStop Color="#7136EC" Offset="1" />
+        </LinearGradientBrush>
+        <DropShadowEffect x:Key="SoftShadow" Color="#98B9FF" BlurRadius="24" ShadowDepth="7" Opacity="0.23" />
+        <Style x:Key="PrimaryButton" TargetType="Button">
+            <Setter Property="Height" Value="46" />
+            <Setter Property="MinWidth" Value="132" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="23" Background="{StaticResource PrimaryBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="SoftButton" TargetType="Button" BasedOn="{StaticResource PrimaryButton}">
+            <Setter Property="Foreground" Value="#315A90" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="23" Background="#EEF6FF" BorderBrush="#B9CDFB" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="InfoBox" TargetType="TextBox">
+            <Setter Property="MinHeight" Value="58" />
+            <Setter Property="Padding" Value="14,10" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="IsReadOnly" Value="True" />
+            <Setter Property="Foreground" Value="#315A90" />
+            <Setter Property="BorderBrush" Value="#C7D7FF" />
+            <Setter Property="Background" Value="#F8FCFF" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+        </Style>
+        <Style TargetType="TabItem">
+            <Setter Property="Padding" Value="22,10" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="#315A90" />
+        </Style>
+    </Window.Resources>
+
+    <Border Margin="18" CornerRadius="28" BorderBrush="#BBD0FF" BorderThickness="1" Background="{StaticResource PageBrush}" ClipToBounds="True">
+        <Grid Margin="28">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Border Width="54" Height="54" CornerRadius="18" Background="#F4FAFF" BorderBrush="#B7CBFF" BorderThickness="1" Effect="{StaticResource SoftShadow}">
+                    <TextBlock Text="设置" FontSize="15" FontWeight="Black" Foreground="#2469FF" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+                <StackPanel Grid.Column="1" Margin="16,0,0,0" VerticalAlignment="Center">
+                    <TextBlock Text="高级设置" FontSize="28" FontWeight="Black" Foreground="#002A61" />
+                    <TextBlock Text="快捷键、文件位置和最近运行记录" Margin="0,6,0,0" Foreground="#55708F" />
+                </StackPanel>
+            </Grid>
+
+            <Border Grid.Row="1" Margin="0,22,0,18" CornerRadius="24" Background="#EFFFFFFF" BorderBrush="#B9CDFB" BorderThickness="1" Padding="18" Effect="{StaticResource SoftShadow}">
+                <TabControl Background="Transparent" BorderThickness="0">
+                    <TabItem Header="设置">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Padding="2,16,10,2">
+                            <StackPanel>
+                                <Border CornerRadius="18" Background="#F8FCFF" BorderBrush="#C7D7FF" BorderThickness="1" Padding="18" Margin="0,0,0,14">
+                                    <StackPanel>
+                                        <TextBlock Text="快捷键" FontSize="18" FontWeight="Black" Foreground="#002A61" />
+                                        <TextBlock Text="F6 开始/继续    F7 暂停    F8 停止" Margin="0,10,0,0" Foreground="#405D83" FontWeight="Bold" />
+                                    </StackPanel>
+                                </Border>
+
+                                <Border CornerRadius="18" Background="#F8FCFF" BorderBrush="#C7D7FF" BorderThickness="1" Padding="18" Margin="0,0,0,14">
+                                    <StackPanel>
+                                        <TextBlock Text="配置文件" FontSize="18" FontWeight="Black" Foreground="#002A61" />
+                                        <TextBox x:Name="SettingsPathBox" Style="{StaticResource InfoBox}" Margin="0,10,0,0" />
+                                    </StackPanel>
+                                </Border>
+
+                                <Border CornerRadius="18" Background="#F8FCFF" BorderBrush="#C7D7FF" BorderThickness="1" Padding="18">
+                                    <StackPanel>
+                                        <TextBlock Text="日志目录" FontSize="18" FontWeight="Black" Foreground="#002A61" />
+                                        <TextBox x:Name="LogPathBox" Style="{StaticResource InfoBox}" Margin="0,10,0,0" />
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </TabItem>
+
+                    <TabItem Header="记录">
+                        <Grid Margin="2,16,10,2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="最近 10 条运行记录" FontSize="18" FontWeight="Black" Foreground="#002A61" />
+                            <ListBox Grid.Row="1" x:Name="HistoryList" Margin="0,12,0,0" BorderBrush="#C7D7FF" Background="#F8FCFF" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </Border>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="打开日志目录" Style="{StaticResource SoftButton}" Click="OpenLogs_Click" />
+                <Button Content="恢复默认" Style="{StaticResource SoftButton}" Click="Reset_Click" Margin="12,0" />
+                <Button Content="完成" Style="{StaticResource PrimaryButton}" Click="Done_Click" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
