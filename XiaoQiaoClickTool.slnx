@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/wpf/">
+    <Project Path="wpf/XiaoQiaoClickTool/XiaoQiaoClickTool.csproj" />
+  </Folder>
+</Solution>

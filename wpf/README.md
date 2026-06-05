@@ -93,6 +93,12 @@ F8  停止
 
 ## 开发运行
 
+在项目根目录构建解决方案：
+
+```powershell
+dotnet build .\XiaoQiaoClickTool.slnx -c Release
+```
+
 在 `wpf` 目录执行：
 
 ```powershell
@@ -104,6 +110,16 @@ dotnet run --project .\XiaoQiaoClickTool\XiaoQiaoClickTool.csproj
 ```powershell
 dotnet run --project .\wpf\XiaoQiaoClickTool\XiaoQiaoClickTool.csproj
 ```
+
+也可以使用 Visual Studio 打开项目根目录的：
+
+```text
+XiaoQiaoClickTool.slnx
+```
+
+## 授权说明
+
+本项目保留所有权利。未经授权，不允许复制、二次分发、转售、再授权或商用本软件及其安装包。详见项目根目录 `LICENSE`。
 
 ## 发布目录
 

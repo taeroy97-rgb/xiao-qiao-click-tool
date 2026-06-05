@@ -126,7 +126,19 @@ F8  停止
 进入项目根目录后执行：
 
 ```powershell
+dotnet build .\XiaoQiaoClickTool.slnx -c Release
+```
+
+开发启动：
+
+```powershell
 dotnet run --project .\wpf\XiaoQiaoClickTool\XiaoQiaoClickTool.csproj
+```
+
+也可以使用 Visual Studio 打开：
+
+```text
+XiaoQiaoClickTool.slnx
 ```
 
 ## 项目目录
@@ -138,7 +150,12 @@ wpf/
   TEST_RECORD.md         测试记录
   installer-wpf.iss      Inno Setup 安装包脚本
 logo图标.png             项目图标原图
+XiaoQiaoClickTool.slnx   Visual Studio / .NET 解决方案文件
 ```
+
+## 授权说明
+
+本项目保留所有权利。未经授权，不允许复制、二次分发、转售、再授权或商用本软件及其安装包。详见 `LICENSE`。
 
 ## 已实现功能
 
