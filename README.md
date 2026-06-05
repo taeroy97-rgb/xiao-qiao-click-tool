@@ -1,8 +1,20 @@
 # 小乔点击工具
 
+XiaoQiao Click Tool is an open-source Windows desktop automation utility for safe, configurable, offline click automation workflows. It is designed for non-technical users and focuses on local-first operation, clear task controls, retry handling, logging, installer distribution, and maintainable WPF source code.
+
 一款 Windows 桌面自动点击工具，用于按指定坐标、范围、时间间隔和次数执行自动点击任务。
 
 当前长期维护主线为 WPF 版本，技术栈为 C# / .NET / WPF。
+
+## Open Source
+
+- License: MIT
+- Platform: Windows desktop
+- Tech stack: C# / .NET / WPF
+- Distribution: GitHub Releases installer
+- Maintainer goal: make repetitive desktop automation easier, safer, and more reliable for non-technical users
+
+This project is actively maintained as an open-source desktop automation utility. Contributions, bug reports, documentation improvements, and reliability-focused reviews are welcome.
 
 ## 软件界面
 
@@ -155,7 +167,14 @@ XiaoQiaoClickTool.slnx   Visual Studio / .NET 解决方案文件
 
 ## 授权说明
 
-本项目保留所有权利。未经授权，不允许复制、二次分发、转售、再授权或商用本软件及其安装包。详见 `LICENSE`。
+本项目使用 MIT License 开源。你可以使用、复制、修改和分发本项目代码，但需要保留许可证和版权声明。详见 `LICENSE`。
+
+## 参与贡献
+
+- 贡献指南：`CONTRIBUTING.md`
+- 项目路线图：`ROADMAP.md`
+- 更新日志：`CHANGELOG.md`
+- 问题反馈：GitHub Issues
 
 ## 已实现功能
 
