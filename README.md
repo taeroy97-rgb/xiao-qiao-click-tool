@@ -19,7 +19,7 @@ https://github.com/taeroy97-rgb/xiao-qiao-click-tool/releases/latest
 下载文件：
 
 ```text
-小乔点击工具 1.1.7.exe
+XiaoQiaoClickTool-Setup-1.1.7.exe
 ```
 
 下载后双击安装即可。
@@ -36,7 +36,7 @@ https://github.com/taeroy97-rgb/xiao-qiao-click-tool/releases/latest
 如果你拿到的是安装包：
 
 ```text
-小乔点击工具 1.1.7.exe
+XiaoQiaoClickTool-Setup-1.1.7.exe
 ```
 
 直接双击安装即可。
